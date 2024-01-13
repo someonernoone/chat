@@ -29,7 +29,7 @@ const Chat = ({ users }) => {
     if (!user) {
       navigate("/");
     }
-    socket = io("https://d618f0ea-cae1-4bd4-954e-88acbd42a1b8-00-2xza46xilhmbu.kirk.replit.dev/")
+    socket = io("/")
     socket.emit("setup", me.user)
     console.log(me.user)
     socket.on("connected", () => setSocketConnected(true));

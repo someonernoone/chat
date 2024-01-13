@@ -6,7 +6,7 @@ if (!token) {
 }
 
 const api = axios.create({
-  baseURL: "https://d618f0ea-cae1-4bd4-954e-88acbd42a1b8-00-2xza46xilhmbu.kirk.replit.dev/api/v1",
+  baseURL: "/api/v1",
   headers: { cookies: token },
 });
 
